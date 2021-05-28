@@ -12,22 +12,16 @@ internal struct RRUtils {
     static var bundle = Bundle(identifier: "org.cocoapods.RRCountryCodePicker")
     
     internal static func getAllCountryCodes() -> [RRCountryCode] {
-        
-        if let path = bundle?.path(forResource: "CountryCodes", ofType: "json") {
-            do {
-                let data = try Data(contentsOf: URL(fileURLWithPath: path), options: .mappedIfSafe)
-                do {
-                    let decodedCountries = try JSONDecoder().decode([String: [RRCountryCode]].self, from: data)
-                    return decodedCountries["countries"] ?? []
-                } catch {
-                    print(error)
-                }
-            } catch let error {
-                print("can't convert exception: ",error)
-            }
+        do {
+            let jsonData = try JSONSerialization.data(withJSONObject: CountryCodeJson.countryCodeJson(), options: .prettyPrinted)
+            let decodedCountries = try JSONDecoder().decode([RRCountryCode].self, from: jsonData)
+            return decodedCountries
+        } catch let exception {
+            print(exception)
         }
         return []
     }
+    
 }
 
 internal extension String {
