@@ -34,10 +34,10 @@ It Launches a new View Controller with all listed country codes & with a search 
   }
   
    s.resource_bundles = {
-     'RRCountryCodePicker' => ['Source/**/*']
+     'RRCountryCodePicker' => ['Source/**/*.bundle']
    }
 
-   s.resources = 'Source/**/*.{bundle,storyboard}'
+   s.resource = 'Source/**/*.storyboard'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
