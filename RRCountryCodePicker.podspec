@@ -34,7 +34,7 @@ It Launches a new View Controller with all listed country codes & with a search 
   }
   
    s.resource_bundles = {
-     'RRCountryCodePicker' => ['Source/**/*.bundle']
+     'RRCountryCodePicker' => ['Source/**/*']
    }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
