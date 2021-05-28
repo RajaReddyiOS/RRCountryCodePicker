@@ -22,7 +22,6 @@
 		EC4B60F92661175400BAF075 /* RRCountryCodePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B60F82661175400BAF075 /* RRCountryCodePicker.swift */; };
 		EC4B60FE266117B300BAF075 /* CountryCodePicker.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EC4B60FD266117B300BAF075 /* CountryCodePicker.storyboard */; };
 		EC4B6103266117EA00BAF075 /* CountryCodeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B6102266117EA00BAF075 /* CountryCodeController.swift */; };
-		EC4B611426612E4000BAF075 /* CountryCodeJson.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B611326612E4000BAF075 /* CountryCodeJson.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,7 +79,6 @@
 		EC4B60F82661175400BAF075 /* RRCountryCodePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = RRCountryCodePicker.swift; path = ../../../../RRCountryCodePicker.swift; sourceTree = "<group>"; };
 		EC4B60FD266117B300BAF075 /* CountryCodePicker.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = CountryCodePicker.storyboard; path = ../../../../CountryCodePicker.storyboard; sourceTree = "<group>"; };
 		EC4B6102266117EA00BAF075 /* CountryCodeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryCodeController.swift; path = ../../../../CountryCodeController.swift; sourceTree = "<group>"; };
-		EC4B611326612E4000BAF075 /* CountryCodeJson.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = CountryCodeJson.swift; path = ../../../../CountryCodeJson.swift; sourceTree = "<group>"; };
 		F40BE51791ECFBE51148027611595E0F /* RRCountryCodePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RRCountryCodePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -234,7 +232,6 @@
 				EC4B60F82661175400BAF075 /* RRCountryCodePicker.swift */,
 				EC4B60FD266117B300BAF075 /* CountryCodePicker.storyboard */,
 				EC4B6102266117EA00BAF075 /* CountryCodeController.swift */,
-				EC4B611326612E4000BAF075 /* CountryCodeJson.swift */,
 			);
 			path = Source;
 			sourceTree = "<group>";
@@ -347,9 +344,16 @@
 					6C572108C33C12C203BBAE67F5F2E60C = {
 						DevelopmentTeam = 7Z847JSHNU;
 						LastSwiftMigration = 1240;
+						ProvisioningStyle = Automatic;
+					};
+					AECD9B47B4BE2640DF1A637D0DB483E1 = {
+						DevelopmentTeam = 7Z847JSHNU;
+						ProvisioningStyle = Automatic;
 					};
 					FB171F4373899A0D8699D062E7AC8CF8 = {
+						DevelopmentTeam = 7Z847JSHNU;
 						LastSwiftMigration = 1240;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
@@ -405,7 +409,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				45DFC51D7BA6CEE5D3FE98F2039D1121 /* RRCountryCodePicker-dummy.m in Sources */,
-				EC4B611426612E4000BAF075 /* CountryCodeJson.swift in Sources */,
 				EC4B60F92661175400BAF075 /* RRCountryCodePicker.swift in Sources */,
 				EC4B60DC2661141500BAF075 /* RRUtils.swift in Sources */,
 				EC4B6103266117EA00BAF075 /* CountryCodeController.swift in Sources */,
@@ -452,12 +455,15 @@
 			baseConfigurationReference = B0DF1A15B34C1CA66AB0CB9C8B9D92A9 /* Pods-RRCountryCodePicker_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -472,6 +478,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -552,12 +560,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -572,6 +583,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -587,12 +600,15 @@
 			baseConfigurationReference = 77A1A28B35412BF512A080AD2FE632B5 /* Pods-RRCountryCodePicker_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -607,6 +623,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -622,12 +640,15 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -642,6 +663,8 @@
 				PODS_ROOT = "$(SRCROOT)";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -720,7 +743,9 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7Z847JSHNU;
@@ -735,6 +760,8 @@
 				MODULEMAP_FILE = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker.modulemap";
 				PRODUCT_MODULE_NAME = RRCountryCodePicker;
 				PRODUCT_NAME = RRCountryCodePicker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
@@ -752,7 +779,9 @@
 				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
 				DEVELOPMENT_TEAM = 7Z847JSHNU;
@@ -767,6 +796,8 @@
 				MODULEMAP_FILE = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker.modulemap";
 				PRODUCT_MODULE_NAME = RRCountryCodePicker;
 				PRODUCT_NAME = RRCountryCodePicker;
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";

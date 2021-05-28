@@ -27,17 +27,17 @@ It Launches a new View Controller with all listed country codes & with a search 
   s.author           = { 'rajareddy2606@gmail.com' => 'rajareddy2606@gmail.com' }
   s.source           = { :git => 'https://github.com/RajaReddyiOS/RRCountryCodePicker.git', :tag => s.version.to_s }
 #  s.social_media_url = 'https://www.linkedin.com/in/raja-reddy-25340a162/'
-  s.source_files = 'Source/**/*'
+  s.source_files = 'Source/**/*.{swift, storyboard, bundle}'
   s.swift_version = '5.0'
   s.platforms = {
       "ios": "9.0"
   }
   
    s.resource_bundles = {
-     'RRCountryCodePicker' => ['Source/**/*.bundle']
+     'RRCountryCodePicker' => ['Source/**/*.bundle', 'Source/**/*.storyboard']
    }
 
-   s.resource = 'Source/**/*.storyboard'
+#   s.resources = 'Source/**/*.storyboard'
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
