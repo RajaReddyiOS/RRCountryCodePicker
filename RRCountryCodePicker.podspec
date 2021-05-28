@@ -37,6 +37,8 @@ It Launches a new View Controller with all listed country codes & with a search 
      'RRCountryCodePicker' => ['Source/**/*']
    }
 
+   s.resources = 'Source/**/*.{bundle,storyboard}'
+
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
