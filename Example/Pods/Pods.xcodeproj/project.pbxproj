@@ -1,0 +1,803 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		2180461B052D807E15662A70E2CD5159 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		2FF30FE9E0F3E4296E4B7DD7C95D9F73 /* RRCountryCodePicker-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = E9295FF34951E624C9B458BBA70FC4A3 /* RRCountryCodePicker-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		45DFC51D7BA6CEE5D3FE98F2039D1121 /* RRCountryCodePicker-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 84862C765E6B3B4B5587F5BE7F809D3A /* RRCountryCodePicker-dummy.m */; };
+		491CD3AD78C40B9D50191C736C8F8FF2 /* Pods-RRCountryCodePicker_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A5057252B8C3C6DA35F1FDA7494BC2BA /* Pods-RRCountryCodePicker_Example-dummy.m */; };
+		496893F1708738440DFBF261DC36DA20 /* Pods-RRCountryCodePicker_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 3DA1154140CAFCC597A23AA09384BDD0 /* Pods-RRCountryCodePicker_Tests-dummy.m */; };
+		560804C8E53FA9D60BEEB5C51D68E624 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		E3A25FF51A9958FC361B4216C55158DF /* Pods-RRCountryCodePicker_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0CFE9C01E863AC722B32EE2A623EE891 /* Pods-RRCountryCodePicker_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E5B8AE7E93379C62DBD021784BFA7BC6 /* Pods-RRCountryCodePicker_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB136844978759A9F7F7C437D4D397D /* Pods-RRCountryCodePicker_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		EBE62DD09D6E1C2430FA0EF996DFE458 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		EC4B609E2660F6D000BAF075 /* RRCountryCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B609D2660F6D000BAF075 /* RRCountryCode.swift */; };
+		EC4B60A42660F83D00BAF075 /* CountryCodes.json in Resources */ = {isa = PBXBuildFile; fileRef = EC4B60A22660F83D00BAF075 /* CountryCodes.json */; };
+		EC4B60A52660F83D00BAF075 /* CountryCodesAssets.bundle in Resources */ = {isa = PBXBuildFile; fileRef = EC4B60A32660F83D00BAF075 /* CountryCodesAssets.bundle */; };
+		EC4B60AA2661091D00BAF075 /* RRUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC4B60A92661091D00BAF075 /* RRUtils.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A4F0BAA60C064CC00ABD035A23758CF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FB171F4373899A0D8699D062E7AC8CF8;
+			remoteInfo = "Pods-RRCountryCodePicker_Example";
+		};
+		FCFA64449D11AD7B62448281F1E22E6E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 6C572108C33C12C203BBAE67F5F2E60C;
+			remoteInfo = RRCountryCodePicker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0CFE9C01E863AC722B32EE2A623EE891 /* Pods-RRCountryCodePicker_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RRCountryCodePicker_Tests-umbrella.h"; sourceTree = "<group>"; };
+		1F463B8D40535F6AA5EE59FF5CE86D93 /* Pods-RRCountryCodePicker_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RRCountryCodePicker_Example.modulemap"; sourceTree = "<group>"; };
+		2588EBD4EADD0309BF244DD938DAB8CB /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		265DFB64C45DD11B9CAF1267C5F5FE4C /* Pods-RRCountryCodePicker_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RRCountryCodePicker_Example-frameworks.sh"; sourceTree = "<group>"; };
+		27DE281F671DFBBFC7796EABC28B5001 /* Pods_RRCountryCodePicker_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RRCountryCodePicker_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		2AC9CF237C31975C38550CDAEB1CA50E /* Pods-RRCountryCodePicker_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RRCountryCodePicker_Example-Info.plist"; sourceTree = "<group>"; };
+		2B2E39F5B2CD31948AB444B6F59A3F39 /* Pods-RRCountryCodePicker_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RRCountryCodePicker_Example.release.xcconfig"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		3DA1154140CAFCC597A23AA09384BDD0 /* Pods-RRCountryCodePicker_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RRCountryCodePicker_Tests-dummy.m"; sourceTree = "<group>"; };
+		3FAA5359E455B286128A8BA4BCA85D82 /* RRCountryCodePicker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RRCountryCodePicker.debug.xcconfig; sourceTree = "<group>"; };
+		4A0CF6FC0BE89836152FFD8FB896F904 /* Pods_RRCountryCodePicker_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RRCountryCodePicker_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		77A1A28B35412BF512A080AD2FE632B5 /* Pods-RRCountryCodePicker_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RRCountryCodePicker_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		837BBB480C94FF2A3C0B9A85C1727622 /* Pods-RRCountryCodePicker_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RRCountryCodePicker_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		84862C765E6B3B4B5587F5BE7F809D3A /* RRCountryCodePicker-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RRCountryCodePicker-dummy.m"; sourceTree = "<group>"; };
+		97EB8D17AE7DE19E0115BBD97D4DFAD5 /* RRCountryCodePicker.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = RRCountryCodePicker.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		989706C24041D5B28728DD8C159A4E97 /* Pods-RRCountryCodePicker_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RRCountryCodePicker_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A5057252B8C3C6DA35F1FDA7494BC2BA /* Pods-RRCountryCodePicker_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RRCountryCodePicker_Example-dummy.m"; sourceTree = "<group>"; };
+		AA76FF7CED5F639482655A5DDFC639D2 /* RRCountryCodePicker-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RRCountryCodePicker-Info.plist"; sourceTree = "<group>"; };
+		B0DF1A15B34C1CA66AB0CB9C8B9D92A9 /* Pods-RRCountryCodePicker_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RRCountryCodePicker_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		BA47903F4F090DB909CFEA9F113D5D12 /* Pods-RRCountryCodePicker_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RRCountryCodePicker_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		C020625D8C89764504AA1A1672CE1667 /* Pods-RRCountryCodePicker_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RRCountryCodePicker_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		C1EE56BC18CD67B25183861BA83BFD76 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		CFD43A133B56D4A5E10067BD0E83E0BB /* RRCountryCodePicker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RRCountryCodePicker.release.xcconfig; sourceTree = "<group>"; };
+		D9EB6EAE6191732CDC3FE49609B8A68D /* RRCountryCodePicker-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RRCountryCodePicker-prefix.pch"; sourceTree = "<group>"; };
+		DDE27A6F12DDE5690E19D57B5BD9E893 /* RRCountryCodePicker.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RRCountryCodePicker.modulemap; sourceTree = "<group>"; };
+		DEB136844978759A9F7F7C437D4D397D /* Pods-RRCountryCodePicker_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RRCountryCodePicker_Example-umbrella.h"; sourceTree = "<group>"; };
+		DEDC4141116C07863577DDC327F5CC5E /* Pods-RRCountryCodePicker_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RRCountryCodePicker_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		E30A95CD5967346B5552D25BBA672C35 /* Pods-RRCountryCodePicker_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-RRCountryCodePicker_Tests.modulemap"; sourceTree = "<group>"; };
+		E9295FF34951E624C9B458BBA70FC4A3 /* RRCountryCodePicker-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RRCountryCodePicker-umbrella.h"; sourceTree = "<group>"; };
+		EC3ECEBC4B9C36C7FC5299AC3C5D4D98 /* Pods-RRCountryCodePicker_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RRCountryCodePicker_Tests-Info.plist"; sourceTree = "<group>"; };
+		EC4B609D2660F6D000BAF075 /* RRCountryCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRCountryCode.swift; sourceTree = "<group>"; };
+		EC4B60A22660F83D00BAF075 /* CountryCodes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = CountryCodes.json; sourceTree = "<group>"; };
+		EC4B60A32660F83D00BAF075 /* CountryCodesAssets.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = CountryCodesAssets.bundle; sourceTree = "<group>"; };
+		EC4B60A92661091D00BAF075 /* RRUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RRUtils.swift; sourceTree = "<group>"; };
+		F40BE51791ECFBE51148027611595E0F /* RRCountryCodePicker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RRCountryCodePicker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4B6CC52DA08CE436BE28DE075D8970F6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				560804C8E53FA9D60BEEB5C51D68E624 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		540B61C65337A498FE0543DAC89EDE75 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2180461B052D807E15662A70E2CD5159 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9B1831BAF671AA1C2E4D926A85B24418 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EBE62DD09D6E1C2430FA0EF996DFE458 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2BE0E782406CF3438F77D856D102F777 /* Pods-RRCountryCodePicker_Example */ = {
+			isa = PBXGroup;
+			children = (
+				1F463B8D40535F6AA5EE59FF5CE86D93 /* Pods-RRCountryCodePicker_Example.modulemap */,
+				989706C24041D5B28728DD8C159A4E97 /* Pods-RRCountryCodePicker_Example-acknowledgements.markdown */,
+				DEDC4141116C07863577DDC327F5CC5E /* Pods-RRCountryCodePicker_Example-acknowledgements.plist */,
+				A5057252B8C3C6DA35F1FDA7494BC2BA /* Pods-RRCountryCodePicker_Example-dummy.m */,
+				265DFB64C45DD11B9CAF1267C5F5FE4C /* Pods-RRCountryCodePicker_Example-frameworks.sh */,
+				2AC9CF237C31975C38550CDAEB1CA50E /* Pods-RRCountryCodePicker_Example-Info.plist */,
+				DEB136844978759A9F7F7C437D4D397D /* Pods-RRCountryCodePicker_Example-umbrella.h */,
+				BA47903F4F090DB909CFEA9F113D5D12 /* Pods-RRCountryCodePicker_Example.debug.xcconfig */,
+				2B2E39F5B2CD31948AB444B6F59A3F39 /* Pods-RRCountryCodePicker_Example.release.xcconfig */,
+			);
+			name = "Pods-RRCountryCodePicker_Example";
+			path = "Target Support Files/Pods-RRCountryCodePicker_Example";
+			sourceTree = "<group>";
+		};
+		4062532076221A88B1A6310610DCCDDB /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				60171C43478E74B00EDB0F83D2D82EFF /* RRCountryCodePicker */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		542D73A613E8018AD653828917F5926F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				DDE27A6F12DDE5690E19D57B5BD9E893 /* RRCountryCodePicker.modulemap */,
+				84862C765E6B3B4B5587F5BE7F809D3A /* RRCountryCodePicker-dummy.m */,
+				AA76FF7CED5F639482655A5DDFC639D2 /* RRCountryCodePicker-Info.plist */,
+				D9EB6EAE6191732CDC3FE49609B8A68D /* RRCountryCodePicker-prefix.pch */,
+				E9295FF34951E624C9B458BBA70FC4A3 /* RRCountryCodePicker-umbrella.h */,
+				3FAA5359E455B286128A8BA4BCA85D82 /* RRCountryCodePicker.debug.xcconfig */,
+				CFD43A133B56D4A5E10067BD0E83E0BB /* RRCountryCodePicker.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RRCountryCodePicker";
+			sourceTree = "<group>";
+		};
+		60171C43478E74B00EDB0F83D2D82EFF /* RRCountryCodePicker */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B609B2660F6AE00BAF075 /* Source */,
+				95BB33BFC49726AE1DC357183EFF1EFE /* Pod */,
+				542D73A613E8018AD653828917F5926F /* Support Files */,
+			);
+			name = RRCountryCodePicker;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		6691D08F8B3732D237AF9452D4720689 /* Pods-RRCountryCodePicker_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				E30A95CD5967346B5552D25BBA672C35 /* Pods-RRCountryCodePicker_Tests.modulemap */,
+				C020625D8C89764504AA1A1672CE1667 /* Pods-RRCountryCodePicker_Tests-acknowledgements.markdown */,
+				837BBB480C94FF2A3C0B9A85C1727622 /* Pods-RRCountryCodePicker_Tests-acknowledgements.plist */,
+				3DA1154140CAFCC597A23AA09384BDD0 /* Pods-RRCountryCodePicker_Tests-dummy.m */,
+				EC3ECEBC4B9C36C7FC5299AC3C5D4D98 /* Pods-RRCountryCodePicker_Tests-Info.plist */,
+				0CFE9C01E863AC722B32EE2A623EE891 /* Pods-RRCountryCodePicker_Tests-umbrella.h */,
+				B0DF1A15B34C1CA66AB0CB9C8B9D92A9 /* Pods-RRCountryCodePicker_Tests.debug.xcconfig */,
+				77A1A28B35412BF512A080AD2FE632B5 /* Pods-RRCountryCodePicker_Tests.release.xcconfig */,
+			);
+			name = "Pods-RRCountryCodePicker_Tests";
+			path = "Target Support Files/Pods-RRCountryCodePicker_Tests";
+			sourceTree = "<group>";
+		};
+		95BB33BFC49726AE1DC357183EFF1EFE /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				2588EBD4EADD0309BF244DD938DAB8CB /* LICENSE */,
+				C1EE56BC18CD67B25183861BA83BFD76 /* README.md */,
+				97EB8D17AE7DE19E0115BBD97D4DFAD5 /* RRCountryCodePicker.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		960401EA49EDA24FA165D31174BF8D3E /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				2BE0E782406CF3438F77D856D102F777 /* Pods-RRCountryCodePicker_Example */,
+				6691D08F8B3732D237AF9452D4720689 /* Pods-RRCountryCodePicker_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				4062532076221A88B1A6310610DCCDDB /* Development Pods */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				EFB991E2D95B7BF948446444F1BCF989 /* Products */,
+				960401EA49EDA24FA165D31174BF8D3E /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EC4B609B2660F6AE00BAF075 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				EC4B60A22660F83D00BAF075 /* CountryCodes.json */,
+				EC4B60A32660F83D00BAF075 /* CountryCodesAssets.bundle */,
+				EC4B609D2660F6D000BAF075 /* RRCountryCode.swift */,
+				EC4B60A92661091D00BAF075 /* RRUtils.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		EFB991E2D95B7BF948446444F1BCF989 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27DE281F671DFBBFC7796EABC28B5001 /* Pods_RRCountryCodePicker_Example.framework */,
+				4A0CF6FC0BE89836152FFD8FB896F904 /* Pods_RRCountryCodePicker_Tests.framework */,
+				F40BE51791ECFBE51148027611595E0F /* RRCountryCodePicker.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		274D620A78EBD86F4AAC1D6AA64B062C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2FF30FE9E0F3E4296E4B7DD7C95D9F73 /* RRCountryCodePicker-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52FE8CB189C1E04572337A9A7309C81D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E3A25FF51A9958FC361B4216C55158DF /* Pods-RRCountryCodePicker_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		BE60DB5A33B21E1024C6717B58C746D7 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E5B8AE7E93379C62DBD021784BFA7BC6 /* Pods-RRCountryCodePicker_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		6C572108C33C12C203BBAE67F5F2E60C /* RRCountryCodePicker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA5782FA902309D1479066867F834E5B /* Build configuration list for PBXNativeTarget "RRCountryCodePicker" */;
+			buildPhases = (
+				274D620A78EBD86F4AAC1D6AA64B062C /* Headers */,
+				4C26096554D5E217E81EA4EB902EEBDD /* Sources */,
+				4B6CC52DA08CE436BE28DE075D8970F6 /* Frameworks */,
+				47DB6117E9CB8B84E89E2E1DC5C866DB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RRCountryCodePicker;
+			productName = RRCountryCodePicker;
+			productReference = F40BE51791ECFBE51148027611595E0F /* RRCountryCodePicker.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		AECD9B47B4BE2640DF1A637D0DB483E1 /* Pods-RRCountryCodePicker_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 080025E7470747B5EBD17B1F8F8CDF4F /* Build configuration list for PBXNativeTarget "Pods-RRCountryCodePicker_Tests" */;
+			buildPhases = (
+				52FE8CB189C1E04572337A9A7309C81D /* Headers */,
+				F928A98559FD33439D8310FB5579DB78 /* Sources */,
+				540B61C65337A498FE0543DAC89EDE75 /* Frameworks */,
+				F5E90057F04526953628B2D3C4157CE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FECC7EBAFE4A9F523902BCAC40178C8B /* PBXTargetDependency */,
+			);
+			name = "Pods-RRCountryCodePicker_Tests";
+			productName = "Pods-RRCountryCodePicker_Tests";
+			productReference = 4A0CF6FC0BE89836152FFD8FB896F904 /* Pods_RRCountryCodePicker_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		FB171F4373899A0D8699D062E7AC8CF8 /* Pods-RRCountryCodePicker_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2FE78DC82ED1248671A9B59FCDDEEDD4 /* Build configuration list for PBXNativeTarget "Pods-RRCountryCodePicker_Example" */;
+			buildPhases = (
+				BE60DB5A33B21E1024C6717B58C746D7 /* Headers */,
+				7001DB0144571C9EF56E9EE52C950CB3 /* Sources */,
+				9B1831BAF671AA1C2E4D926A85B24418 /* Frameworks */,
+				4030C7C002218C60A29AF69CE23CBF27 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F4DEB9252249C948261BCA1303F3406 /* PBXTargetDependency */,
+			);
+			name = "Pods-RRCountryCodePicker_Example";
+			productName = "Pods-RRCountryCodePicker_Example";
+			productReference = 27DE281F671DFBBFC7796EABC28B5001 /* Pods_RRCountryCodePicker_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				TargetAttributes = {
+					FB171F4373899A0D8699D062E7AC8CF8 = {
+						LastSwiftMigration = 1240;
+					};
+				};
+			};
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = EFB991E2D95B7BF948446444F1BCF989 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FB171F4373899A0D8699D062E7AC8CF8 /* Pods-RRCountryCodePicker_Example */,
+				AECD9B47B4BE2640DF1A637D0DB483E1 /* Pods-RRCountryCodePicker_Tests */,
+				6C572108C33C12C203BBAE67F5F2E60C /* RRCountryCodePicker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4030C7C002218C60A29AF69CE23CBF27 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EC4B60A52660F83D00BAF075 /* CountryCodesAssets.bundle in Resources */,
+				EC4B60A42660F83D00BAF075 /* CountryCodes.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		47DB6117E9CB8B84E89E2E1DC5C866DB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F5E90057F04526953628B2D3C4157CE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4C26096554D5E217E81EA4EB902EEBDD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				45DFC51D7BA6CEE5D3FE98F2039D1121 /* RRCountryCodePicker-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7001DB0144571C9EF56E9EE52C950CB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				491CD3AD78C40B9D50191C736C8F8FF2 /* Pods-RRCountryCodePicker_Example-dummy.m in Sources */,
+				EC4B60AA2661091D00BAF075 /* RRUtils.swift in Sources */,
+				EC4B609E2660F6D000BAF075 /* RRCountryCode.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F928A98559FD33439D8310FB5579DB78 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				496893F1708738440DFBF261DC36DA20 /* Pods-RRCountryCodePicker_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F4DEB9252249C948261BCA1303F3406 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RRCountryCodePicker;
+			target = 6C572108C33C12C203BBAE67F5F2E60C /* RRCountryCodePicker */;
+			targetProxy = FCFA64449D11AD7B62448281F1E22E6E /* PBXContainerItemProxy */;
+		};
+		FECC7EBAFE4A9F523902BCAC40178C8B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "Pods-RRCountryCodePicker_Example";
+			target = FB171F4373899A0D8699D062E7AC8CF8 /* Pods-RRCountryCodePicker_Example */;
+			targetProxy = 0A4F0BAA60C064CC00ABD035A23758CF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		2AFD7C0474AAD2E319F288FA93CA4C3A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B0DF1A15B34C1CA66AB0CB9C8B9D92A9 /* Pods-RRCountryCodePicker_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RRCountryCodePicker_Tests/Pods-RRCountryCodePicker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RRCountryCodePicker_Tests/Pods-RRCountryCodePicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4EBC741460BC710C963D24CAAB3BC925 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		7A7F844FDBB2D8271F527B85D1672DBB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BA47903F4F090DB909CFEA9F113D5D12 /* Pods-RRCountryCodePicker_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RRCountryCodePicker_Example/Pods-RRCountryCodePicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RRCountryCodePicker_Example/Pods-RRCountryCodePicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8092F3F51D990A13353656172C1851E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77A1A28B35412BF512A080AD2FE632B5 /* Pods-RRCountryCodePicker_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RRCountryCodePicker_Tests/Pods-RRCountryCodePicker_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RRCountryCodePicker_Tests/Pods-RRCountryCodePicker_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9C35B09F052330E8DE462AA1289F5CE2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2B2E39F5B2CD31948AB444B6F59A3F39 /* Pods-RRCountryCodePicker_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-RRCountryCodePicker_Example/Pods-RRCountryCodePicker_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RRCountryCodePicker_Example/Pods-RRCountryCodePicker_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		A40FB7C4B9460AE765A736AB575EEB32 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		E243A9303FF61434DB3FB2046F55E043 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3FAA5359E455B286128A8BA4BCA85D82 /* RRCountryCodePicker.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker.modulemap";
+				PRODUCT_MODULE_NAME = RRCountryCodePicker;
+				PRODUCT_NAME = RRCountryCodePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		F1E34CC6291086D6EEF32EDA24AAF2A3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CFD43A133B56D4A5E10067BD0E83E0BB /* RRCountryCodePicker.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RRCountryCodePicker/RRCountryCodePicker.modulemap";
+				PRODUCT_MODULE_NAME = RRCountryCodePicker;
+				PRODUCT_NAME = RRCountryCodePicker;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		080025E7470747B5EBD17B1F8F8CDF4F /* Build configuration list for PBXNativeTarget "Pods-RRCountryCodePicker_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2AFD7C0474AAD2E319F288FA93CA4C3A /* Debug */,
+				8092F3F51D990A13353656172C1851E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2FE78DC82ED1248671A9B59FCDDEEDD4 /* Build configuration list for PBXNativeTarget "Pods-RRCountryCodePicker_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7A7F844FDBB2D8271F527B85D1672DBB /* Debug */,
+				9C35B09F052330E8DE462AA1289F5CE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4EBC741460BC710C963D24CAAB3BC925 /* Debug */,
+				A40FB7C4B9460AE765A736AB575EEB32 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA5782FA902309D1479066867F834E5B /* Build configuration list for PBXNativeTarget "RRCountryCodePicker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E243A9303FF61434DB3FB2046F55E043 /* Debug */,
+				F1E34CC6291086D6EEF32EDA24AAF2A3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+}

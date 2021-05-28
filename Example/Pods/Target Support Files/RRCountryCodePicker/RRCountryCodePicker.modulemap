@@ -1,0 +1,6 @@
+framework module RRCountryCodePicker {
+  umbrella header "RRCountryCodePicker-umbrella.h"
+
+  export *
+  module * { export * }
+}

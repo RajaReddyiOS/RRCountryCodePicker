@@ -1,0 +1,16 @@
+PODS:
+  - RRCountryCodePicker (0.1.0)
+
+DEPENDENCIES:
+  - RRCountryCodePicker (from `../`)
+
+EXTERNAL SOURCES:
+  RRCountryCodePicker:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  RRCountryCodePicker: 9ecdb53097eadf1ab125498bc10f35ff88bfaa80
+
+PODFILE CHECKSUM: 4717927b7daa13ad077ab1906d0412f4dd3959da
+
+COCOAPODS: 1.10.0.rc.1
