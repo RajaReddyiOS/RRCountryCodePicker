@@ -345,6 +345,7 @@
 				LastUpgradeCheck = 1240;
 				TargetAttributes = {
 					6C572108C33C12C203BBAE67F5F2E60C = {
+						DevelopmentTeam = 7Z847JSHNU;
 						LastSwiftMigration = 1240;
 					};
 					FB171F4373899A0D8699D062E7AC8CF8 = {
@@ -716,12 +717,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 3FAA5359E455B286128A8BA4BCA85D82 /* RRCountryCodePicker.debug.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -747,12 +749,13 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = CFD43A133B56D4A5E10067BD0E83E0BB /* RRCountryCodePicker.release.xcconfig */;
 			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = 7Z847JSHNU;
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";

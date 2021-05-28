@@ -26,7 +26,7 @@ It Launches a new View Controller with all listed country codes & with a search 
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'rajareddy2606@gmail.com' => 'rajareddy2606@gmail.com' }
   s.source           = { :git => 'https://github.com/RajaReddyiOS/RRCountryCodePicker.git', :tag => s.version.to_s }
-  s.social_media_url = 'https://www.linkedin.com/in/raja-reddy-25340a162/'
+#  s.social_media_url = 'https://www.linkedin.com/in/raja-reddy-25340a162/'
   s.source_files = 'Source/**/*'
   s.swift_version = '5.0'
   s.platforms = {
