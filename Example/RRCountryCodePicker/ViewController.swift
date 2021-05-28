@@ -9,17 +9,20 @@
 import UIKit
 import RRCountryCodePicker
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, RRCountryCodesDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction private func showPickerHandler(_ sender: UIButton) {
+        RRCountryCodePicker().showPicker(self)
     }
-
+    
+    func didSelectRRCountryCode(_ countryName: String, dialCode: String, countryCode: String) {
+        print(countryName, dialCode, countryCode)
+    }
+    
 }
 
